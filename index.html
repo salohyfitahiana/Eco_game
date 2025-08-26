@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO Game - Apprends, joue et sauve le monde</title>
+    <meta name="description" content="ECO Game - Jeu éducatif pour apprendre les gestes écoresponsables et protéger l'environnement">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#accueil" class="logo">
+                    <img src="./logo.svg" alt="ECO-Game Logo" class="logo-img" onerror="this.style.display='none'">
+                    ECO Game
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu de navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link active" data-section="accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#readme" class="nav-link" data-section="readme">Readme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1>ECO Game</h1>
+                        <p class="hero-subtitle">Apprends, joue et sauve le monde</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Objectifs du jeu ECO Game</h2>
+                        <p class="card-description">
+                            Découvrez les missions éducatives qui vous attendent dans ce jeu innovant dédié à la protection de l'environnement
+                        </p>
+                    </div>
+                    
+                    <div class="objectives-grid">
+                        <div class="objective-item">
+                            <div class="objective-icon">🎮</div>
+                            <div class="objective-content">
+                                <h3>Gestes Écoresponsables</h3>
+                                <p>Jouer et apprendre les gestes écoresponsables à travers des défis interactifs et des situations du quotidien.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-item">
+                            <div class="objective-icon">💧</div>
+                            <div class="objective-content">
+                                <h3>Conservation de l'Eau</h3>
+                                <p>Jouer et apprendre à conserver l'eau grâce à des mini-jeux éducatifs et des conseils pratiques.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="objective-item">
+                            <div class="objective-icon">🌍</div>
+                            <div class="objective-content">
+                                <h3>Agenda 2030</h3>
+                                <p>Jouer et protéger l'environnement pour atteindre les objectifs de développement  durable de l'<a href="https://www.agenda-2030.fr/17-objectifs-de-developpement-durable/?" class="agenda">Agenda 2030</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Readme -->
+        <section id="readme" class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Explication du jeu</h2>
+                        <p class="card-description">
+                            Découvrez un parcours éducatif avec 3 sections interactives et 3 niveaux de difficulté progressifs
+                        </p>
+                    </div>
+                    
+                    <div class="sections-grid">
+                        <div class="section-card">
+                            <div class="section-number">1</div>
+                            <h3>Tâches quotidiennes et
+consommation</h3>
+                            <p>Deviens un héros du quotidien en découvrant des gestes simples et responsables à travers des quiz interactifs et des mini-jeux ludiques</p>
+                        </div>
+                        
+                        <div class="section-card">
+                            <div class="section-number">2</div>
+                            <h3>Gestion de l’eau et
+protection de la nature</h3>
+                            <p>Renforce tes connaissances environnementales en relevant des défis stimulants sur la préservation de l’eau et la sauvegarde de la biodiversité.</p>
+                        </div>
+                        
+                        <div class="section-card">
+                            <div class="section-number">3</div>
+                            <h3>Triage des déchets</h3>
+                            <p>Mets tes compétences à l’épreuve et deviens un ambassadeur de l’écologie, prêt à inspirer les autres par tes actions.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="#" class="btn btn-primary" role="button">
+                            <span>🎮</span>
+                            Jouer au jeu ECO-Game 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Contact et Partenaires</h2>
+                        <p class="card-description">
+                            Découvrez les organisations et partenaires qui ont contribué au développement d'ECO Game
+                        </p>
+                    </div>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <div class="contact-icon">🏫</div>
+                            <h3>Passerelles Numériques Madagascar</h3>
+                            <p>Organisation partenaire spécialisée dans l'éducation numérique et le développement durable à Madagascar.</p>
+                            <a href="https://www.passerellesnumeriques.org/fr/what-we-do/madagascar/" class="pnm">PNM site</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">🏢</div>
+                            <h3>Malagasy Brand Communication</h3>
+                            <p>Agence de communication et de développement digital accompagnant la création et la promotion d'ECO Game.</p>
+                            <a href="https://www.mbc.mg/" class="mbc">MBC Site</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">🧑‍💻</div>
+                            <h3>STN-04-2025</h3>
+                            <p ><ul class="name">
+                                <li>Stella Mampionona</li>
+                                <li>Annie Adela</li>
+                                <li>Ny Antso Mampitony</li>
+                                <li>Salohy Fitahiana</li>
+                                <li>Roger Randrianiaina</li>
+                            </ul></p>
+                            <a href="mailto:stnprojectmbc@gmail.com" class="mail">Mail stn-04 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ECO Game - Projet Olympiade, proposé par Malagasy Brand Communication et réalisé par le groupe 4 STN à Passerelles Numériques Madagascar.🌍</p>
+        </div>
+    </footer>
+
+ <script src="./annimation.js"> </script>
+</body>
+</html>
