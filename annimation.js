@@ -367,3 +367,47 @@
 
         // Start the application
         new ECOGameWebsite();
+
+        // === Interaction noms STN ===
+document.addEventListener("DOMContentLoaded", () => {
+    const stnPhoto = document.getElementById("stn-photo");
+    const stnNames = document.querySelectorAll(".stn-card .name li");
+
+    stnNames.forEach(li => {
+        li.addEventListener("mouseenter", () => {
+            const newPhoto = li.getAttribute("data-photo");
+            if (newPhoto) {
+                stnPhoto.src = newPhoto;
+            }
+        });
+
+        li.addEventListener("mouseleave", () => {
+            stnPhoto.src = "./default.jpg"; // image par défaut
+        });
+    });
+});
+// === Changer fond de la boîte STN selon le nom ===
+document.addEventListener("DOMContentLoaded", () => {
+    const stnCard = document.querySelector(".stn-card");
+    const stnNames = document.querySelectorAll(".stn-card .name li");
+
+    // Asiana background par défaut
+    const defaultBg = "./default.jpg";
+
+    stnCard.style.backgroundImage = `url('${defaultBg}')`;
+
+    stnNames.forEach(li => {
+        li.addEventListener("mouseenter", () => {
+            const newPhoto = li.getAttribute("data-photo");
+            if (newPhoto) {
+                stnCard.style.backgroundImage = `url('${newPhoto}')`;
+            }
+        });
+
+        li.addEventListener("mouseleave", () => {
+            stnCard.style.backgroundImage = `url('${defaultBg}')`;
+        });
+    });
+});
+
+        
